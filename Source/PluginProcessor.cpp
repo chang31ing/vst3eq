@@ -223,7 +223,7 @@ ChainSettings getChainSettings(juce::AudioProcessorValueTreeState& apvts)
     settings.lowCutSlope = static_cast<Slope>(apvts.getRawParameterValue("LowCut Slope")->load());
     settings.highCutSlope = static_cast<Slope>(apvts.getRawParameterValue("HighCut Slope")->load());
 
-    return settings;
+    return settings; 
 }
 
 Coefficients makePeakFilter(const ChainSettings& chainSettings, double sampleRate)
@@ -238,7 +238,7 @@ void SimpleEQAudioProcessor::updatePeakFilter(const ChainSettings& chainSettings
     updateCoefficients(rightChain.get<ChainPositions::Peak>().coefficients, peakCoefficients);
 }
 
-void SimpleEQAudioProcessor::updateCoefficients(Coefficients &old, const Coefficients &replacements) // comment out simpleeqaudioprocessor in the future dumbass
+void updateCoefficients(Coefficients &old, const Coefficients &replacements) // comment out simpleeqaudioprocessor in the future dumbass
 {
     *old = *replacements;
 }
