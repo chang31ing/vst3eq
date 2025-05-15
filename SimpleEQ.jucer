@@ -4,6 +4,9 @@
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
   <MAINGROUP id="OgWsE5" name="SimpleEQ">
     <GROUP id="{5112F5B3-4340-EC19-9AED-E2B2DCECBFD0}" name="Source">
+      <GROUP id="{D6EA4B1D-670E-E2B9-1D49-AD8C8A3006AE}" name="Assets">
+        <FILE id="Xj33lC" name="background.jpg" compile="0" resource="1" file="Source/Assets/background.jpg"/>
+      </GROUP>
       <FILE id="eUzCjM" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="AkVGnr" name="PluginProcessor.h" compile="0" resource="0"
